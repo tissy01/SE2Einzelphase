@@ -28,7 +28,7 @@ public class Send extends AsyncTask<String,Void, Void> {
             pw.flush();
             pw.close();
             s.close();
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         }
