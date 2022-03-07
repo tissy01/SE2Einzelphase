@@ -19,11 +19,16 @@ public class Send extends AsyncTask<String,Void, Void> {
 
     @Override
     protected Void doInBackground(String... voids) {
-        String matrikelnr = voids[1];
+        String matrikelnr = voids[0];
 
         try {
             s = new Socket("se2-isys.aau.at", 53212);
             pw = new PrintWriter(s.getOutputStream());
+            pw.write(matrikelnr);
+            pw.flush();
+            pw.close();
+            s.close();
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
