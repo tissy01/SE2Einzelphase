@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="e.g. 01460761"
+        android:gravity="center"
         android:textColor="#BF6E6E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,10 +44,10 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberInput"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.122" />
 
     <TextView
         android:id="@+id/serverRspOutput"
@@ -56,10 +57,10 @@
         android:textColor="#BF6E6E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/serverRspView"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <Button
         android:id="@+id/buttonSend"
@@ -73,19 +74,19 @@
         app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/serverRspOutput"
-        app:layout_constraintVertical_bias="0.503" />
+        app:layout_constraintVertical_bias="0.602" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calc"
         android:background="@drawable/roundbuttonblue"
+        android:text="Calc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.773"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/serverRspOutput"
-        app:layout_constraintVertical_bias="0.503" />
+        app:layout_constraintVertical_bias="0.602" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
