@@ -9,6 +9,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         serverStream.execute(mrtkNr); // starts server stream
     }
 
+    @SuppressLint("StaticFieldLeak")
     public class ServerStream extends AsyncTask<String, Void, String> { //Needs to be async because it cannot run on the main thread, because main would need to pause or wait for this
 
         String res = "";

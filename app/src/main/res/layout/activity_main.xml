@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:text="e.g. 01460761"
+        android:hint="e.g. 01460761"
         android:textColor="#BF6E6E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
